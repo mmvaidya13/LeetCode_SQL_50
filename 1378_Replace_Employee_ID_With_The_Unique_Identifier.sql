@@ -1,4 +1,4 @@
 SELECT EUI.unique_id 
-,EMP.name     
+, EMP.name
 FROM Employees  EMP
-LEFT JOIN EmployeeUNI EUI ON EMP.id =EUI.id 
+    LEFT JOIN EmployeeUNI EUI ON EMP.id =EUI.id 

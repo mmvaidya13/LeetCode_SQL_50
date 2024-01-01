@@ -1,7 +1,7 @@
 /* Write your T-SQL query statement below */
 SELECT QU.query_name
-	,ROUND(AVG(CONVERT(DECIMAL(16, 2), QU.rating) / CONVERT(DECIMAL(16, 2), QU.position)), 2) AS quality
-	,ROUND((
+	, ROUND(AVG(CONVERT(DECIMAL(16, 2), QU.rating) / CONVERT(DECIMAL(16, 2), QU.position)), 2) AS quality
+	, ROUND((
 			(
 				CONVERT(DECIMAL(16, 2), COUNT(CASE 
 							WHEN QU.rating < 3
